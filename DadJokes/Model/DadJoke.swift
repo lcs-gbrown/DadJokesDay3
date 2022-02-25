@@ -12,7 +12,8 @@ import Foundation
 // Swift to be able to take a JSON object
 // and 'decode' into an instance of this
 // structure
-struct DadJoke: Decodable, Hashable {
+// COnforming to the encodable protocol just means that swift will be able to turn this data structure into a JSON object
+struct DadJoke: Decodable, Hashable, Encodable {
     let id: String
     let joke: String
     let status: Int
